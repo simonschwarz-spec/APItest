@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    font-family: Arial, sans-sherif;
+    color: white;
+    background: linear-gradient(to right, #6a5acd, #48c6ef)
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.digite {
+    width: 260px;
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    font-size: 17px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.digite::placeholder {
+    color: #999
+}
+
+.digite:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 10px rgba(106, 90, 205, 1);
+}
+
+.botao {
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #5b4fcf;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    background: #f5f3ff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.botao:active {
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #030303;
+    color: white;
+    font-size: small;
+    margin-bottom: 0%;
+    margin-top: 13%;
+}
