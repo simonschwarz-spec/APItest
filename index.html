@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Teste de API</title>
-</head>
-<body>
-    <main>
-        <h1>
-            Consulta de Clima
-        </h1>
-        <br>
-        <input class="digite" type="search" placeholder="Digite a cidade">
-        <br><br>
-        <input class="botao" type="button" value="Buscar">
-    </main>
-    <footer>
-        <p>simon_schwarz@estudante.sesisenai.org.br</p><br>
-        <p>Direitos reservados, SESI SENAI, Lages</p><br>
-        <time datetime="2026">2026</time><br>
-    </footer>
-</body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consulta do Clima</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <main class="container">
+            <h1>Consulta do Clima</h1>
+
+            <label for="cidade">Digite uma cidade:</label><br>
+
+            <input
+            type="text"
+            id="cidade"
+            placeholder="Ex.: Lages"
+            >
+
+            <button id="buscar">
+            Buscar
+            </button>
+
+            <section id="resultado">
+            <!-- O JavaScript colocará o resultado aqui -->
+            </section>
+        </main>
+
+        <footer>
+                <p>simon_schwarz@estudante.sesisenai.org.br</p><br>
+                <p>Direitos reservados, SESI SENAI, Lages</p><br>
+                <time datetime="2026">2026</time><br>
+            </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>

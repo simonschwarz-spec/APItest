@@ -19,7 +19,13 @@ h1 {
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.digite {
+label {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#cidade {
     width: 260px;
     height: 35px;
     margin: 0 auto;
@@ -34,16 +40,16 @@ h1 {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
 }
 
-.digite::placeholder {
+#cidade::placeholder {
     color: #999
 }
 
-.digite:focus {
+#cidade:focus {
     transform: translateY(-2px);
     box-shadow: 0 8px 10px rgba(106, 90, 205, 1);
 }
 
-.botao {
+#buscar {
     width: 100px;
     height: 25px;
     margin: 0 auto;
@@ -59,13 +65,13 @@ h1 {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
 }
 
-.botao:hover {
+#buscar:hover {
     transform: translateY(-3px);
     background: #f5f3ff;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
 }
 
-.botao:active {
+#buscar:active {
     transform: translateY(0);
 }
 
@@ -74,5 +80,5 @@ footer {
     color: white;
     font-size: small;
     margin-bottom: 0%;
-    margin-top: 13%;
+    margin-top: 15%;
 }
