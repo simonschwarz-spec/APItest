@@ -9,6 +9,22 @@ const GEO_URL =
 const CLIMA_URL =
     "https://api.open-meteo.com/v1/forecast";
 
+// ===========================================
+// REGISTRO DO SERVICE WORKER
+// ===========================================
+if ("serviceWorker" in navegator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+        .register("sw.js")
+        .then(() => {
+            console.log("Service Worker registrado com sucesso.");
+        })
+        .catch((erro) => {
+            console.error("Erro ao registrar o Service Worker:", erro);
+        });
+    });
+}
+
 
 // ============================================
 // ELEMENTOS DA PÁGINA

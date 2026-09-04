@@ -1,0 +1,20 @@
+{
+    "name": "Checagem de Clima SENAI",
+    "short_name": "Clima City",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#f5f3ff",
+    "theme_color": "#1f5c99",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

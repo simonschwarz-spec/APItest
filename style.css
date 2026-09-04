@@ -1,84 +1,123 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    align-items: center;
-    font-family: Arial, sans-sherif;
-    color: white;
-    background: linear-gradient(to right, #6a5acd, #48c6ef)
-}
+    html {
+        height: 100%;
+        min-height: 100%;
+    }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 42px;
-    font-weight: 700;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-}
+    .container {
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
 
-label {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-}
+    body {
+        align-items: center;
+        font-family: Arial, sans-sherif;
+        color: white;
+        background: linear-gradient(to right, #6a5acd, #48c6ef);
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
 
-#cidade {
-    width: 260px;
-    height: 35px;
-    margin: 0 auto;
-    display: block;
-    padding: 0 18px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    background: rgba(255, 255, 255, 0.95);
-    color: #333;
-    font-size: 17px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-}
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 42px;
+        font-weight: 700;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
 
-#cidade::placeholder {
-    color: #999
-}
+    label {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
 
-#cidade:focus {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 10px rgba(106, 90, 205, 1);
-}
+    #cidade {
+        width: 260px;
+        height: 35px;
+        margin: 0 auto;
+        display: block;
+        padding: 0 18px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+        font-size: 17px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    }
 
-#buscar {
-    width: 100px;
-    height: 25px;
-    margin: 0 auto;
-    margin-top: 15px;
-    border: none;
-    border-radius: 5px;
-    background: #ffffff;
-    color: #5b4fcf;
-    display: block;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-}
+    #cidade::placeholder {
+        color: #999
+    }
 
-#buscar:hover {
-    transform: translateY(-3px);
-    background: #f5f3ff;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
-}
+    #cidade:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 10px rgba(106, 90, 205, 1);
+    }
 
-#buscar:active {
-    transform: translateY(0);
-}
+    #buscar {
+        width: 100px;
+        height: 25px;
+        margin: 0 auto;
+        margin-top: 15px;
+        border: none;
+        border-radius: 5px;
+        background: #ffffff;
+        color: #5b4fcf;
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    }
 
-footer {
-    background-color: #030303;
-    color: white;
-    font-size: small;
-    margin-bottom: 0%;
-    margin-top: 15%;
+    #buscar:hover {
+        transform: translateY(-3px);
+        background: #f5f3ff;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+    }
+
+    #buscar:active {
+        transform: translateY(0);
+    }
+
+    input, button {
+        width: 100%;
+        min-height: 44px;
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+
+    @media (min-width: 600px) {
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 32px;
+        }
+
+    input {
+        width: 70%;
+    }
+
+    button {
+        width: 28%;
+        margin-top: 8px;
+    }
+
+    footer {
+        background-color: #030303;
+        color: white;
+        font-size: small;
+        margin-top: auto;
+        padding-bottom: 0%;
+        width: 100%;
+    }
 }
