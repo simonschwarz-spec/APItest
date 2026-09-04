@@ -1,18 +1,7 @@
-// ============================================
-// CONSULTA DO CLIMA - OPEN-METEO
-// ============================================
-
-// URLs das APIs
-const GEO_URL =
-    "https://geocoding-api.open-meteo.com/v1/search";
-
-const CLIMA_URL =
-    "https://api.open-meteo.com/v1/forecast";
-
 // ===========================================
 // REGISTRO DO SERVICE WORKER
 // ===========================================
-if ("serviceWorker" in navegator) {
+if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
         navigator.serviceWorker
         .register("sw.js")
@@ -24,6 +13,17 @@ if ("serviceWorker" in navegator) {
         });
     });
 }
+
+// ============================================
+// CONSULTA DO CLIMA - OPEN-METEO
+// ============================================
+
+// URLs das APIs
+const GEO_URL =
+    "https://geocoding-api.open-meteo.com/v1/search";
+
+const CLIMA_URL =
+    "https://api.open-meteo.com/v1/forecast"
 
 
 // ============================================
